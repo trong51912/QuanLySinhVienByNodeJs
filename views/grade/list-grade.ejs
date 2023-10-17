@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../includes/head') -%>
+    <body>
+      <%- include('../includes/header') -%>
+  
+      <%- include('../includes/sidebar') -%>
+
+      <div class="page-wrapper">
+        <div class="content container-fluid">
+          <div class="page-header">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3 class="page-title">Grades Management</h3>
+                <ul class="breadcrumb">
+                 
+                    <a class="text-primary" href="/cousers">  <li class="breadcrumb-item 
+                      fa fa-arrow-left ">    </li> Quay Lại  </a>
+               
+                  <li class="breadcrumb-item active"> <a href="#">   /  Gardes of Couser </a> </li>
+                  <!-- Click vào môn học để xem điểm  -->
+                </ul>
+              </div>
+              <div>
+               <a href="/sort">
+                <i style="font-size:x-large "  class="fas fa-sort-numeric-up-alt"></i>
+               </a> 
+              </div>
+              <!-- ADD Grade -->
+              <div class="col-auto text-right float-right ml-auto">
+                <a href="/add-grade" class="btn btn-primary"
+                  ><i class="fas fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card card-table">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table
+                      class="table table-hover table-center mb-0 datatable"
+                    >
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Name</th>
+                          <th>Điểm chuyên cần</th>
+                          <th>Điểm thực hành</th>
+                          <th>Điểm cuối kì</th>
+                          <th>Điểm tổng kết</th>
+                          <th>Xếp loại</th>
+                          <th class="text-right">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <%gradeData.forEach(function(item) { %>
+                        <tr>
+                          <td><%= item.studentId %> </td>
+                          <td>
+                            <h2>
+                              <a> <%= item.nameStudent %>  </a>
+                            </h2>
+                          </td>
+                          <td class="text-center"><%= item.diemChuyenCan %></td>
+                          <td class="text-center" ><%= item.diemThucHanh %></td>
+                          <td class="text-center"><%= item.diemCuoiKy %></td>
+                          <td class="text-center"><%= item.diemTongKet %></td> 
+                           <td class="text-center <%= item.xepHang == "Đạt" ? "text-success" : "text-danger"%> "><%= item.xepHang %></td>
+                           <!-- Dùng logic để kiểm tra xếp loại -->
+                          <td class="text-right">
+                            <div class="actions">
+                              <a
+                                href="/grade/update-grade/<%= item.id %>"
+                                class="btn btn-sm bg-success-light mr-2"
+                              >
+                              <!-- Sửa -->
+                                <i class="fas fa-pen"></i>
+                              </a>
+                              <a href="/grade/delete-grade/<%= item.id %>" class="btn btn-sm bg-danger-light">
+                                <!-- Xóa -->
+                                <i class="fas fa-trash"></i>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                        <%}); %>  
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>

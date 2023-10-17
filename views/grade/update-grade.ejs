@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../includes/head') -%>
+
+  <body>
+    <%- include('../includes/header') -%>
+
+      <%- include('../includes/sidebar') -%>
+        <div class="page-wrapper">
+          <div class="content container-fluid">
+            <div class="page-header">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="page-title">Update Grade</h3>
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item ">
+                      <a class="text-primary" href="/grade">Quay lại</a>
+                    </li>
+                    <li class=" breadcrumb-item active">Update Grade</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <form method="post">
+                      <div class="row">
+                        <div class="col-sm">
+                          <div class="form-group">
+                            <label>Tên Sinh Viên</label>
+                            <input name="nameStudent" type="text" class="form-control"
+                              value="<%- gradeData.nameStudent %>" />
+                          </div>
+                          <div class="col-sm">
+                            <div class="form-group">
+                              <label>Mã Môn Học</label>
+                              <input name="monHocId" type="text" class="form-control"
+                                value="<%- gradeData.monHocId %>" />
+                            </div>
+                          </div>
+                          <div class="col-sm">
+                            <div class="form-group">
+                              <label>Mã Sinh Viên</label>
+                              <input name="studentId" type="text" class="form-control"
+                                value="<%- gradeData.studentId %>" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm">
+                              <div class="form-group-4">
+                                <label>Điểm Chuyên Cần</label>
+                                <input name="diemChuyenCan" type="number" class="form-control"
+                                  value="<%- gradeData.diemChuyenCan %>" />
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group">
+                                <label>Điểm Thực Hành</label>
+                                <input name="diemThucHanh" type="number" class="form-control"
+                                  value="<%- gradeData.diemThucHanh %>" />
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group">
+                                <label>Điểm Cuối Kỳ</label>
+                                <input name="diemCuoiKy" type="number" class="form-control"
+                                  value="<%- gradeData.diemCuoiKy%>" />
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary">
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <%- include('../includes/footer') -%>
+  </body>
+
+</html>

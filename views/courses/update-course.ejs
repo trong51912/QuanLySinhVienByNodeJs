@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../includes/head') -%>
+    <body>
+      <%- include('../includes/header') -%>
+  
+      <%- include('../includes/sidebar') -%>
+      <div class="page-wrapper">
+        <div class="content container-fluid">
+          <div class="page-header">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3 class="page-title">Update Course</h3>
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item ">
+                    <a class="text-primary" href="/courses">Quay lại</a>
+                  </li>
+                  <li class=" breadcrumb-item active">Update Course</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <form method="post">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <label>ID Môn Học</label>
+                          <input name="courseId" type="text" class="form-control"
+                          value="<%- dataCourse.courseId %>" />
+                        </div>
+                        </div>
+                      
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Tên Môn Học</label>
+                            <input name="name" type="text" class="form-control"
+                            value="<%- dataCourse.name %>"/>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Giáo Viên Giảng Dạy</label>
+                            <input name="teacherName" type="text" class="form-control"
+                            value="<%- dataCourse.teacherName%>" />
+                          </div>
+                        </div>
+                        </div>
+
+                          <div class="col-sm">
+                            <div class="form-group-4">
+                              <label>Mô Tả Môn Học</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="des"  value="<%- dataCourse.des %>" ></textarea>
+                            </div>
+                          </div>
+                          <br> 
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      <%- include('../includes/footer') -%>
+</body>
+</html>

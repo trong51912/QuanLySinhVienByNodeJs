@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../includes/head') -%>
+  <body>
+    <%- include('../includes/header') -%> <%- include('../includes/sidebar') -%>
+
+    <div class="page-wrapper">
+      <div class="content container-fluid">
+        <!-- PAGE-HEADER AREA-->
+        <div class="page-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="page-title">Detail Class</h3>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/class">Class</a>
+                </li>
+                <li class="breadcrumb-item active">Detail Class</li>
+              </ul>
+            </div>
+            <!-- SEARCH -->
+            <div class="top-nav-search">
+              <form action="/class/search-class" method="GET">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search here"
+                  name="keyword"
+                />
+                <button class="btn" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <a class="mobile_btn" id="mobile_btn">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="col-auto text-right float-right ml-auto">
+              <a href="/class/add-class" class="btn btn-primary"
+                ><i class="fas fa-plus"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE AREA-->
+        <div class="row">
+          <h4> Class</h4>
+          <div class="col-sm-12">
+            <div class="card card-table">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="form-title"> 
+                      <span>Class Information</span>
+                    </h3>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                      <label>Name</label>
+                      <h5><%= classes.name%></h5>
+                    </div>
+                    
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                      <label>Teacher</label>
+                      <h5><%= classes.teacher%></h5>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                      <label>Number Of Student</label>
+                      <h5><%= classes.numOfStudent %></h5>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                      <label>Department</label>
+                      <% departments.forEach(function(department){%>
+                        <% if(department._id.toString()===classes.departmentId){ %> 
+                          <h5><%=department.name%></h5>
+                      <%}}) %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>List Student of Class</h4>
+          <div class="col-sm-12">
+            <div class="card card-table">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-hover table-center mb-0 datatable">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th class="text-right">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% students.forEach(function(student, index){%>
+                        <% if(student.classId===classes._id.toString()){ %>
+                        <tr>
+                        <td>
+                          <h2 class="table-avatar">
+                            <a
+                              href="/student/detail-student/<%= student._id %>"
+                              class="avatar avatar-sm mr-2">
+                              <img
+                                class="avatar-img rounded-circle"
+                                src="/img/profiles/avatar-01.jpg"
+                                alt="User Image"/>
+                            </a>
+                            <a href="/student/detail-student/<%= student._id %>"><%= student.name %></a>
+                          </h2>
+                        </td>
+                        <td><%= student.gender %></td>
+                        <td><%= student.dob %></td>
+                        <td><%= student.phone %></td>
+                        <td><%= student.address %></td>
+                        <td class="text-right">
+                          <div class="actions">
+                            <a
+                              href="/student/update-student/<%= student._id %>"
+                              class="btn btn-sm bg-success-light mr-2"
+                            >
+                              <i class="fas fa-pen"></i>
+                            </a>
+                            <a
+                              href="/student/delete-student/<%= student._id %>"
+                              class="btn btn-sm bg-danger-light"
+                            >
+                              <i class="fas fa-trash"></i>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                      <%}});%>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('../includes/footer'); -%>
+  </body>
+</html>

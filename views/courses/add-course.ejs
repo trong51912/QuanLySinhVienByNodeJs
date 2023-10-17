@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../includes/head') -%>
+    <body>
+      <%- include('../includes/header') -%>
+  
+      <%- include('../includes/sidebar') -%>
+
+      <div class="page-wrapper">
+        <div class="content container-fluid">
+          <div class="page-header">
+            <div class="row align-items-center">
+              <div class="col">
+      <!-- Example row of columns -->
+      <h3 class="diary-title">ADD COURSE</h3>
+      <form action="/courses/add-course" method="post">
+        <div class="mb-3">
+          <label for="" class="form-label">COURSE ID</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="courseId">
+        </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Tên Môn Học</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="name">
+      </div>
+      <div class="mb-3">
+        <label for="teacherName" class="form-label">Giáo Viên Giảng Dạy</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="teacherName">
+      </div>
+      <div class="mb-3">
+        <label for="des" class="form-label">Mô tả môn học</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="des"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Image URL</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="image">
+      </div>
+        <br>
+      <button type="submit" class="btn btn-primary center">Thêm mới</button>
+    </form>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+     <!-- /container -->
+                
+      <%- include('../includes/footer') -%>
+</body>
+</html>

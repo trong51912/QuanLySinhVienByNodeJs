@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../includes/head') -%>
+     
+  <body>
+    <%- include('../includes/header') -%>
+
+    <%- include('../includes/sidebar') -%>
+
+    <div class="page-wrapper">
+      <div class="content container-fluid">
+        <div class="page-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="page-title">Add Students</h3>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/student">Students</a>
+                </li>
+                <li class="breadcrumb-item active">Add Students</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <form action="/student/add-student" method="post">
+                  <div class="row">
+                    <div class="col-12">
+                      <h5 class="form-title"> 
+                        <span>Student Information</span>
+                      </h5>
+                    </div>
+                    <div class="col-12 col-sm-12">
+                      <div class="form-group">
+                        <label class="form-label" for="field-120334">Name</label>
+                        <span class="desc"></span>
+                        <div class="controls">
+                          <input type="text" id="name" required="required" class="form-control" name="name"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="form-label" for="field-120334">Gender</label>
+                        <select id="gender" name="gender" required="required" class="form-control">
+                          <option value="Famale">Female</option>
+                          <option value="Male">Male</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="form-label" for="field-120334">Date of Birth</label>
+                        <span class="desc"></span>
+                        <div class="controls">
+                          <input type="date" id="dob" value="" required="required" class="form-control" name="dob"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="form-label" for="field-120334">Class</label>
+                        <select id="class" name="class" class="form-control">
+                          <% data.forEach(function(item) { %>
+                          <option value="<%= item._id %>"><%= item.name %></option>
+                          <% }); %>
+                      </select>
+                      </div>
+                    </div>  
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="form-label" for="field-120334">Address</label>
+                        <span class="desc"></span>
+                        <div class="controls">
+                          <input type="text" class="form-control" required="required" id="address" name="address"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="form-label" for="field-120334">Phone</label>
+                        <input type="text" class="form-control" required="required" name="phone"/>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="form-label" for="field-120334">Student Image</label>
+                        <input type="file" value="" class="form-control" id="image" name="image"/>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

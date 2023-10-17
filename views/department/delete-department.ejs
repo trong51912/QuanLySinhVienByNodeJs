@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../includes/head') -%>
+<body>
+
+    <%- include('../includes/header') -%>
+
+    <%- include('../includes/sidebar') -%>
+
+    <!--  -->
+    <div class="page-wrapper">
+        <div class="content container-fluid">
+           <div class="page-header">
+              <div class="row align-items-center">
+                 <div class="col">
+                    <h3 class="page-title">Delete Department</h3>
+                    <ul class="breadcrumb">
+                       <li class="breadcrumb-item"><a href="/department">Departments</a></li>
+                       <li class="breadcrumb-item active">Delete Departments</li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-sm-12">
+                 <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <button class="btn btn-primary"><a class="link" href="/department">Trở lại</a></button>
+                        </div>
+                        <div>
+                            
+                            <form method="POST">
+                                Bạn muốn xóa department <strong></strong> ?
+                                <button type="submit" class="btn btn-primary">Xóa</button>
+                            </form>
+                        </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+    <%- include('../includes/footer') -%>
+     
+    
+</body>
+</html>

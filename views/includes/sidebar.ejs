@@ -1,0 +1,109 @@
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-inner slimscroll">
+    <div id="sidebar-menu" class="sidebar-menu">
+      <ul>
+        <li class="menu-title">
+          <span>Main Menu</span>
+        </li>
+        <li class="submenu home">
+            <a href="#">
+              <i class="fa fa-home"></i>
+              <span>Trang chủ</span>
+              <span class="menu-arrow"></span>
+            </a>
+          <ul>
+            <li><a href="/">Trang chủ</a></li>
+          </ul>
+        </li>
+        <li class="submenu khoa">
+          <a href="#">
+            <i class="fas fa-user-graduate"></i>
+            <span>Khoa</span>
+            <span class="menu-arrow"></span>
+          </a>
+          <ul>
+            <li><a href="/department">Danh sách khoa</a></li>
+          </ul>
+        </li>
+        <li class="submenu lop">
+          <a href="#">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span>Lớp</span>
+            <span class="menu-arrow"></span>
+          </a>
+          <ul>
+            <li><a href="/class">Danh sách lớp</a></li>
+          </ul>
+        </li>
+        <li class="submenu student">
+          <a href="#">
+            <i class="fas fa-building"></i>
+            <span> Sinh viên</span>
+            <span class="menu-arrow"></span>
+          </a>
+          <ul>
+            <li><a href="/student">Danh sách sinh viên</a></li>
+          </ul>
+        </li>
+        <li class="submenu diem">
+          <a href="#">
+            <i class="fas fa-book-reader"></i>
+            <span>Quản lý Môn Học</span>
+            <span class="menu-arrow"></span>
+          </a>
+          <ul>
+            <li><a href="/courses">Danh sách Môn Học </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+  var Sidemenu = function() {
+		this.$menuItem = $('#sidebar-menu a');
+	};
+	
+	function init() {
+		var $this = Sidemenu;
+		$('#sidebar-menu a').on('click', function(e) {
+			if($(this).parent().hasClass('submenu')) {
+				e.preventDefault();
+			}
+			if(!$(this).hasClass('subdrop')) {
+				$('ul', $(this).parents('ul:first')).slideUp(350);
+				$('a', $(this).parents('ul:first')).removeClass('subdrop');
+				$(this).next('ul').slideDown(350);
+				$(this).addClass('subdrop');
+			} else if($(this).hasClass('subdrop')) {
+				$(this).removeClass('subdrop');
+				$(this).next('ul').slideUp(350);
+			}
+		});
+		$('#sidebar-menu ul li.submenu a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
+	}
+	
+	// Sidebar Initiate
+	init();
+	
+	// Mobile menu sidebar overlay
+	
+	$('body').append('<div class="sidebar-overlay"></div>');
+	$(document).on('click', '#mobile_btn', function() {
+		$wrapper.toggleClass('slide-nav');
+		$('.sidebar-overlay').toggleClass('opened');
+		$('html').addClass('menu-opened');
+		return false;
+	});
+	
+	// Sidebar overlay
+	
+	$(".sidebar-overlay").on("click", function () {
+		$wrapper.removeClass('slide-nav');
+		$(".sidebar-overlay").removeClass("opened");
+		$('html').removeClass('menu-opened');
+	});
+
+</script>

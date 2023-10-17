@@ -1,0 +1,10 @@
+GET http://localhost:3000/home
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTM0OTIwYWVlMmNlYTc0MmRkYWU0MiIsImFkbWluIjp0cnVlLCJpYXQiOjE2NzA2MzI3NjksImV4cCI6MTY3MDYzMjc5OX0.WyAzJZc2mAIA-8TFh8-iyFjRM2y3sBrbCrkI2Zvmsr4
+
+POST  http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"loy@gmail.com",
+    "password": "1"
+}

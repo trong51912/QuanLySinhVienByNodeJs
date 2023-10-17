@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../includes/head') -%>
+     
+  <body>
+    <%- include('../includes/header') -%>
+
+    <%- include('../includes/sidebar') -%>
+
+    <div class="page-wrapper">
+      <div class="content container-fluid">
+        <div class="page-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="page-title">Add Class</h3>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/class">Class</a>
+                </li>
+                <li class="breadcrumb-item active">Add Class</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <form action="/class/add-class", method="post">
+                  <div class="row">
+                    <div class="col-12">
+                      <h5 class="form-title"> 
+                        <span>Class Information</span>
+                      </h5>
+                    </div>
+                    <div class="col-12 col-sm-12">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name"/>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label>Department</label>
+                        <select name="departmentId" class="form-control">
+                          <option disabled="disabled">Select Department</option>
+                          <% data.forEach((item)=>{%> 
+                          <option value="<%= item._id %>"><%= item.name %> </option>
+                          <%}) %>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label>Teacher</label>
+                        <input type="text" class="form-control" name="teacher"/>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

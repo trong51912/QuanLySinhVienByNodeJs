@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../includes/head') -%>
+  <body>
+    <%- include('../includes/header') -%> 
+    
+    <%- include('../includes/sidebar') -%> 
+
+    <div class="page-wrapper">
+      <div class="content container-fluid">
+
+        <!-- PAGE-HEADER AREA-->
+        <div class="page-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="page-title">Students</h3>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">
+                  <a href="/student">Students</a></li>
+              </ul>
+            </div>
+            <!-- SEARCH -->
+            <div class="top-nav-search">
+              <form action="/student/search-student" method="GET">
+                <input type="text" class="form-control" placeholder="Search here" name="keyword"/>
+                <button class="btn" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <a class="mobile_btn" id="mobile_btn">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="col-auto text-right float-right ml-auto">
+              <a href="/student/add-student" class="btn bg-danger-light">
+                <i class="fas fa-plus"></i>
+              </a>
+              <a href="student/deleted-student" class="btn bg-danger-light">
+                <i class="fas fa-hourglass-end"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE AREA-->
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card card-table">
+              <div class="card-body">
+                <div class="col-auto text-center float-right ml-auto">
+                      <a href="/student/sortbyname-student" class="btn bg-primary-light">
+                      <i class="fa fa-sort-alpha-down"></i>
+                      </a>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-hover table-center mb-0 datatable">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th class="text-right">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% students.forEach(function(student, index) {  %>
+                      <tr>
+                        <td><%= index + 1 %></td>
+                        <td>
+                          <h2 class="table-avatar">
+                            <a
+                              href="student/detail-student/<%= student._id %>"
+                              class="avatar avatar-sm mr-2"
+                            >
+                              <img
+                                class="avatar-img rounded-circle"
+                                src="/img/profiles/avatar-01.jpg"
+                                alt="User Image"
+                              />
+                            </a>
+                            <a href="student/detail-student/<%= student._id %>"><%= student.name %></a>
+                          </h2>
+                        </td>
+                        <% classes.forEach(function(item){ if(item._id.toString()===student.classId){%>
+                          <td><%= item.name %></td>
+                        <% }}) %> 
+                        <td><%= student.gender %></td>
+                        <td><%= student.dob %></td> 
+                        <td><%= student.phone %></td>
+                        <td><%= student.address %></td>
+                        <td class="text-right">
+                          <div class="actions">
+                            <a
+                              href="student/update-student/<%= student._id %>"
+                              class="btn btn-sm bg-success-light mr-2">
+                              <i class="fas fa-pen"></i>
+                            </a>
+                            <a href="student/delete-student/<%= student._id %>" 
+                              class="btn btn-sm bg-danger-light">
+                              <i class="fas fa-trash"></i>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    <% }); %> 
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <%- include('../includes/footer'); -%>
+  </body>
+</html>

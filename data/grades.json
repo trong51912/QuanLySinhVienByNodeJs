@@ -1,0 +1,118 @@
+[{
+  "_id": {
+    "$oid": "63941cb7769380f79681b13e"
+  },
+  "nameStudent": "Nguyễn Ngọc Nhân",
+  "diemChuyenCan": 7,
+  "diemThucHanh": 9,
+  "diemCuoiKy": 9,
+  "diemTongKet": 8.8,
+  "xepHang": "Đạt",
+  "monHocId": "IOT01",
+  "studentId": "51936",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63941cca769380f79681b143"
+  },
+  "nameStudent": "Nguyễn Đình Lộc",
+  "diemChuyenCan": 9,
+  "diemThucHanh": 5,
+  "diemCuoiKy": 3,
+  "diemTongKet": 4.4,
+  "xepHang": "Không Đạt",
+  "monHocId": "IOT01",
+  "studentId": "51937",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63941ce7769380f79681b14b"
+  },
+  "nameStudent": "Huỳnh Hoài Nam",
+  "diemChuyenCan": 10,
+  "diemThucHanh": 9,
+  "diemCuoiKy": 9,
+  "diemTongKet": 9.1,
+  "xepHang": "Đạt",
+  "monHocId": "IOT01",
+  "studentId": "52299",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63941cfc769380f79681b150"
+  },
+  "nameStudent": "Trần Ngọc Trọng",
+  "diemChuyenCan": 6,
+  "diemThucHanh": 8,
+  "diemCuoiKy": 5,
+  "diemTongKet": 6.3,
+  "xepHang": "Đạt",
+  "monHocId": "IOT01",
+  "studentId": "52594",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63941d11769380f79681b155"
+  },
+  "nameStudent": "Phạm Đưc Nam",
+  "diemChuyenCan": 5,
+  "diemThucHanh": 7,
+  "diemCuoiKy": 7,
+  "diemTongKet": 6.8,
+  "xepHang": "Đạt",
+  "monHocId": "IOT01",
+  "studentId": "53859",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63941d3b769380f79681b160"
+  },
+  "nameStudent": "Nguyễn Ngọc Nhân",
+  "diemChuyenCan": 7,
+  "diemThucHanh": 8,
+  "diemCuoiKy": 7,
+  "diemTongKet": 7.4,
+  "xepHang": "Đạt",
+  "monHocId": "KTCT",
+  "studentId": "51936",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63941d57769380f79681b165"
+  },
+  "nameStudent": "Nguyễn Đình Lộc",
+  "diemChuyenCan": 8,
+  "diemThucHanh": 9,
+  "diemCuoiKy": 6,
+  "diemTongKet": 7.4,
+  "xepHang": "Đạt",
+  "monHocId": "KTCT",
+  "studentId": "51937",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63941dda769380f79681b178"
+  },
+  "nameStudent": "Nguyễn Đình Lộc",
+  "diemChuyenCan": 6,
+  "diemThucHanh": 10,
+  "diemCuoiKy": 9,
+  "diemTongKet": 9.1,
+  "xepHang": "Đạt",
+  "monHocId": "NODE02",
+  "studentId": "51937",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63941df8769380f79681b17d"
+  },
+  "nameStudent": "Huỳnh Hoài Nam",
+  "diemChuyenCan": 8,
+  "diemThucHanh": 7,
+  "diemCuoiKy": 9,
+  "diemTongKet": 8.1,
+  "xepHang": "Đạt",
+  "monHocId": "NODE02",
+  "studentId": "52299",
+  "__v": 0
+}]

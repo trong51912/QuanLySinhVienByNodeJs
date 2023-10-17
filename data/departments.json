@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "638b15dcb7d515c96ef45079"
+  },
+  "name": "CNTT",
+  "dean": "Do Sinh",
+  "establishTime": "2002",
+  "numOfStudent": 150,
+  "isDeleted": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638b19810844502af6000b45"
+  },
+  "name": "Ngon Ngu Anh",
+  "dean": "Nguyeen Van D",
+  "establishTime": "2002",
+  "numOfStudent": 150,
+  "isDeleted": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f1f64b1aef8629b4fd4d"
+  },
+  "name": "Giáo Dục Tiều Học",
+  "dean": "Trần Thị Huyền",
+  "establishTime": "2002",
+  "numOfStudent": 100,
+  "isDeleted": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639435d2ba3fdc85a6a1aa51"
+  },
+  "name": "Marketing",
+  "dean": "Nguyễn Văn C",
+  "establishTime": "2002",
+  "isDeleted": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639435e8ba3fdc85a6a1aa54"
+  },
+  "name": "Ngôn Ngữ Nhật",
+  "dean": "Trần Thị Hồng",
+  "establishTime": "",
+  "isDeleted": false,
+  "__v": 0
+}]

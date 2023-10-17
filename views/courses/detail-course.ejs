@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../includes/head') -%>
+    <body>
+      <%- include('../includes/header') -%>
+  
+      <%- include('../includes/sidebar') -%>
+      
+     <div class="page-wrapper">
+        <div class="content container-fluid">
+          <div class="page-header">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3 class="page-title">Detail Couser</h3>
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item ">
+                    <a class="text-primary" href="/courses">Quay lại</a>
+                  </li>
+                  <li class=" breadcrumb-item active">Detail Couser</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         <!-- Main jumbotron for a primary marketing message or call to action -->
+         <div class="card mb-3">
+          <form method="POST">
+          <img width="300px"  height="300px" , class="card-img-top" src="<%=couserData.image%>" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="text-success card-title font-weight-bold">Môn Học: <%- couserData.name %></h5>
+            <h5 class="card-title font-weight-bold">  Giáo Viên Giảng Dạy : <%- couserData.teacherName%></h5>
+            <p class="card-text">Mô Tả : <%- couserData.des %></p>
+            <p class="card-text"><small class="text-muted"> ID <%- couserData.couserId %></small></p>
+            <a style="font-size:larger;" href="/grade/<%= couserData.couserId %>"><i class="fa fa-graduation-cap" aria-hidden="true"></i>  Danh sách điểm</a>
+          </div>
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    
+      <%- include('../includes/footer') -%>
+</body>
+</html>

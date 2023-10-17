@@ -1,0 +1,241 @@
+[{
+  "_id": {
+    "$oid": "6391f1754b1aef8629b4fd0f"
+  },
+  "name": "ST20A1A",
+  "teacher": "Nguyễn Văn A",
+  "numOfStudent": 3,
+  "departmentId": "638b15dcb7d515c96ef45079",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670508917562"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670655479736"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f17d4b1aef8629b4fd15"
+  },
+  "name": "ST20A2A",
+  "teacher": "Nguyễn Văn B",
+  "numOfStudent": 5,
+  "departmentId": "638b15dcb7d515c96ef45079",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670508925658"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670655447031"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f1854b1aef8629b4fd1b"
+  },
+  "name": "ST20A3A",
+  "teacher": "Nguyễn Văn C",
+  "numOfStudent": 4,
+  "departmentId": "638b15dcb7d515c96ef45079",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670508933557"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670655426251"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f18e4b1aef8629b4fd21"
+  },
+  "name": "ST20A4A",
+  "teacher": "Nguyễn Văn D",
+  "numOfStudent": 3,
+  "departmentId": "638b15dcb7d515c96ef45079",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670508942428"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670655467085"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f19b4b1aef8629b4fd27"
+  },
+  "name": "EL20A1A",
+  "teacher": "Trần Thị A",
+  "numOfStudent": 2,
+  "departmentId": "638b19810844502af6000b45",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670508955162"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670584521725"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f1a64b1aef8629b4fd2d"
+  },
+  "name": "EL20A2A",
+  "teacher": "Trần Thị B",
+  "numOfStudent": 3,
+  "departmentId": "638b19810844502af6000b45",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670508966760"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645414279"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f1bd4b1aef8629b4fd3e"
+  },
+  "name": "EL20A3A",
+  "teacher": "Trần Thị C",
+  "numOfStudent": 1,
+  "departmentId": "638b19810844502af6000b45",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670508989289"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645339085"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f22f4b1aef8629b4fd5f"
+  },
+  "name": "PE20A1A",
+  "teacher": "Đinh Thị A",
+  "numOfStudent": 3,
+  "departmentId": "6391f1f64b1aef8629b4fd4d",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670509103226"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645357047"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63943604ba3fdc85a6a1aa6b"
+  },
+  "name": "MK20A1A",
+  "teacher": "Nguyễn Văn D",
+  "numOfStudent": 1,
+  "departmentId": "639435d2ba3fdc85a6a1aa51",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670657540421"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670657674808"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6394360fba3fdc85a6a1aa71"
+  },
+  "name": "MK20A2A",
+  "teacher": "Nguyễn Văn D",
+  "numOfStudent": 1,
+  "departmentId": "639435d2ba3fdc85a6a1aa51",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670657551881"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670657635296"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63943618ba3fdc85a6a1aa77"
+  },
+  "name": "JA20A1A",
+  "teacher": "Nguyễn Văn A",
+  "numOfStudent": 1,
+  "departmentId": "639435e8ba3fdc85a6a1aa54",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670657560805"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670657713694"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63943625ba3fdc85a6a1aa7d"
+  },
+  "name": "JA20A2A",
+  "teacher": "Nguyễn Văn D",
+  "numOfStudent": 0,
+  "departmentId": "639435e8ba3fdc85a6a1aa54",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670657573397"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670657573397"
+    }
+  },
+  "__v": 0
+}]

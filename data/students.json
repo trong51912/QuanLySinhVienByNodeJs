@@ -1,0 +1,595 @@
+[{
+  "_id": {
+    "$oid": "6391f2634b1aef8629b4fd76"
+  },
+  "name": "Nguyễn Văn A",
+  "classId": "6391f1754b1aef8629b4fd0f",
+  "gender": "Male",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670509155423"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670584137809"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f26f4b1aef8629b4fd7d"
+  },
+  "name": "Nguyễn Văn B",
+  "classId": "6391f1754b1aef8629b4fd0f",
+  "gender": "Male",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670509167522"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670584138479"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6391f3254b1aef8629b4fd94"
+  },
+  "name": "Nguyễn Văn C",
+  "classId": "6391f17d4b1aef8629b4fd15",
+  "gender": "Male",
+  "dob": "2022-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670509349240"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670584139287"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63931881bbd79197ee1ca15b"
+  },
+  "name": "Nguyễn Văn D",
+  "classId": "6391f1854b1aef8629b4fd1b",
+  "gender": "Famale",
+  "dob": "2002-11-12",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670584449383"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670584449383"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63931896bbd79197ee1ca162"
+  },
+  "name": "Nguyễn Văn E",
+  "classId": "6391f18e4b1aef8629b4fd21",
+  "gender": "Male",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670584470785"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670584470785"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639318aabbd79197ee1ca169"
+  },
+  "name": "Nguyễn Văn F",
+  "classId": "6391f19b4b1aef8629b4fd27",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670584490900"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670584490900"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639318c9bbd79197ee1ca170"
+  },
+  "name": "Nguyễn Văn G",
+  "classId": "6391f19b4b1aef8629b4fd27",
+  "gender": "Male",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670584521726"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670584521726"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639318f4bbd79197ee1ca185"
+  },
+  "name": "Nguyễn Văn I",
+  "classId": "6391f1a64b1aef8629b4fd2d",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670584564560"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670584564560"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639404fefbf07e08ee4cb102"
+  },
+  "name": "Nguyễn Văn O",
+  "classId": "6391f22f4b1aef8629b4fd5f",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670644990466"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670644990466"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63940511fbf07e08ee4cb109"
+  },
+  "name": "Nguyễn Văn P",
+  "classId": "6391f22f4b1aef8629b4fd5f",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645009880"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645009880"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63940543fbf07e08ee4cb110"
+  },
+  "name": "Nguyễn Văn Q",
+  "classId": "6391f1bd4b1aef8629b4fd3e",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645059348"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645059348"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63940588fbf07e08ee4cb11c"
+  },
+  "name": "Nguyễn Văn X",
+  "classId": "6391f17d4b1aef8629b4fd15",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645128734"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645128734"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639405b2fbf07e08ee4cb123"
+  },
+  "name": "Nguyễn Văn Y",
+  "classId": "6391f17d4b1aef8629b4fd15",
+  "gender": "Male",
+  "dob": "2002-11-12",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645170383"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645170383"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639405cbfbf07e08ee4cb12a"
+  },
+  "name": "Nguyễn Văn Z",
+  "classId": "6391f18e4b1aef8629b4fd21",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645195655"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645195655"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639405e6fbf07e08ee4cb131"
+  },
+  "name": "Nguyễn Văn J",
+  "classId": "6391f1854b1aef8629b4fd1b",
+  "gender": "Famale",
+  "dob": "2002-11-22",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645222534"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645222534"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63940612fbf07e08ee4cb138"
+  },
+  "name": "Nguyễn Văn V",
+  "classId": "6391f1854b1aef8629b4fd1b",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645266592"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645266592"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63940629fbf07e08ee4cb140"
+  },
+  "name": "Nguyễn Văn R",
+  "classId": "6391f1a64b1aef8629b4fd2d",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645289762"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645289762"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6394066dfbf07e08ee4cb154"
+  },
+  "name": "Nguyễn Văn W",
+  "classId": "6391f22f4b1aef8629b4fd5f",
+  "gender": "Male",
+  "dob": "2002-11-12",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645357048"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645357048"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639406a6fbf07e08ee4cb166"
+  },
+  "name": "Nguyễn Văn L",
+  "classId": "6391f1a64b1aef8629b4fd2d",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670645414280"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670645414280"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63942dad905c561367522220"
+  },
+  "name": "Huỳnh Hoài Nam",
+  "classId": "6391f17d4b1aef8629b4fd15",
+  "gender": "Male",
+  "dob": "2002-11-07",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670655405713"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670655405713"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63942dc2905c561367522227"
+  },
+  "name": "Nguyễn Đình Lộc",
+  "classId": "6391f1854b1aef8629b4fd1b",
+  "gender": "Male",
+  "dob": "2002-01-10",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670655426252"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670655426252"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63942dd7905c56136752222e"
+  },
+  "name": "Nguyễn Ngọc Nhân",
+  "classId": "6391f17d4b1aef8629b4fd15",
+  "gender": "Male",
+  "dob": "2002-10-04",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670655447032"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670655447032"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63942deb905c561367522235"
+  },
+  "name": "Trần Ngọc Trọng",
+  "classId": "6391f18e4b1aef8629b4fd21",
+  "gender": "Male",
+  "dob": "2002-07-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670655467087"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670655467087"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63942df7905c56136752223c"
+  },
+  "name": "Phạm Đức Nam",
+  "classId": "6391f1754b1aef8629b4fd0f",
+  "gender": "Male",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670655479737"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670655479737"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63943663ba3fdc85a6a1aab7"
+  },
+  "name": "Nguyễn Văn H",
+  "classId": "6394360fba3fdc85a6a1aa71",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670657635297"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670657635297"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6394368aba3fdc85a6a1aac3"
+  },
+  "name": "Nguyễn Văn L",
+  "classId": "63943604ba3fdc85a6a1aa6b",
+  "gender": "Famale",
+  "dob": "2002-11-11",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670657674810"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670657674810"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639436b1ba3fdc85a6a1aaca"
+  },
+  "name": "Nguyễn Văn N",
+  "classId": "63943618ba3fdc85a6a1aa77",
+  "gender": "Famale",
+  "dob": "2002-11-12",
+  "phone": "0773564824",
+  "address": "33 Xo Viet Nghe Tinh",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670657713695"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670657713695"
+    }
+  },
+  "__v": 0
+}]

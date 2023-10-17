@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../includes/head') -%>
+    <body>
+      <%- include('../includes/header') -%>
+  
+      <%- include('../includes/sidebar') -%>
+    
+   <div class="page-wrapper">
+      <div class="content container-fluid">
+        <div class="page-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <a href="/">Quay lại</a>
+              <h3 class="page-title">Courses</h3>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">Courses</a>
+              </ul>
+            </div>
+            <div class="col-auto text-right float-right ml-auto">
+              <a href="/courses/add-course" class="btn bg-danger-light">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <form method="post">
+          <table class="table table-hover table-center mb-0 datatable">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Teacher Name</th>
+                <th class="text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% courseData.forEach(function(item) { %>
+              <tr>
+                <td><%= item.courseId %></td>
+                <td><a href="/courses/detail/<%=item.courseId%>"><%= item.name %></a></td>
+                <td><%= item.teacherName %></td>
+                <td class="text-right">
+                  <div class="actions">
+                    <a
+                      href="/courses/update-course/<%= item.id %>"
+                      class="btn btn-sm bg-success-light mr-2">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                    <a href="/courses/delete/<%= item.id %>" 
+                      class="btn btn-sm bg-danger-light">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <%}); %>  
+            </tbody>
+          </table>
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <!-- /container -->
+    
+</body>
+</html>

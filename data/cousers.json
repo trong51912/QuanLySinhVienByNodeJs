@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "6392e17da79620018de249b3"
+  },
+  "couserId": "IOT01",
+  "name": "IOT",
+  "teacherName": "Đỗ Sính",
+  "des": "Oke",
+  "image": "https://izisolution.vn/upload/2021/IoT-giup-doanh-nghiep-trien-khai-erp-hieu-qua.jpg",
+  "isDeleted": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639362ef674f7e0518eef097"
+  },
+  "couserId": "KTCT",
+  "name": "Kinh Tế Chính Trị",
+  "teacherName": "Lê Thị Thu Huyền",
+  "des": "Oke",
+  "image": "http://nghiencuuquocte.org/wp-content/uploads/2013/05/2013TitleMap-IPE.jpg",
+  "isDeleted": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63941dc5769380f79681b171"
+  },
+  "couserId": "NODE02",
+  "name": "Lập trình mã nguồn mở 2",
+  "teacherName": "Võ Văn Đức",
+  "des": "Nodejs - MongoDB - Express ",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+  "isDeleted": false,
+  "__v": 0
+}]

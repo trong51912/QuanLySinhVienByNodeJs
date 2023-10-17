@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../includes/head') -%>
+  <body>
+    <%- include('../includes/header') -%> 
+    
+    <%- include('../includes/sidebar') -%> 
+
+    <div class="page-wrapper">
+      <div class="content container-fluid">
+
+        <!-- PAGE-HEADER AREA-->
+        <div class="page-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="page-title">Class</h3>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active"><a href="/class">Class</a></li>
+              </ul>
+            </div>
+            <!-- SEARCH -->
+            <div class="top-nav-search">
+              <form action="/class/search-class" method="GET">
+                <input type="text" class="form-control" placeholder="Search here" name="keyword"/>
+                <button class="btn" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <a class="mobile_btn" id="mobile_btn">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="col-auto text-right float-right ml-auto">
+              <a href="/class/add-class" class="btn btn-primary"
+                ><i class="fas fa-plus"></i
+              ></a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TABLE AREA-->
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card card-table">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-hover table-center mb-0 datatable">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>Name</th>
+                        <th>Teacher</th>
+                        <th>Number Of Student</th>
+                        <th>Department</th>
+                        <th class="text-right">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <% classes.forEach(function(item, index) { %>
+                      <tr>
+                        <td><%= index + 1 %></td>
+                        <td>
+                          <h2 class="table-avatar">
+                            <a
+                              href="/class/detail-class/<%= item._id %>"
+                              class="avatar avatar-sm mr-2"
+                            >
+                              <img
+                                class="avatar-img rounded-circle"
+                                src="/img/profiles/avatar-01.jpg"
+                                alt="User Image"
+                              />
+                            </a>
+                            <a href="/class/detail-class/<%= item._id %>"><%= item.name %></a>
+                          </h2>
+                        </td>
+                        <td><%= item.teacher %></td>
+                        <td><%= item.numOfStudent %></td>
+                        <% departments.forEach((department)=>{%> 
+                            <% if(department._id.toString()===item.departmentId){%> 
+                            <td><%= department.name %></td>
+                          <%}}) %>
+                        <td class="text-right">
+                          <div class="actions">
+                            <a
+                              href="/class/update-class/<%= item._id %>"
+                              class="btn btn-sm bg-success-light mr-2">
+                              <i class="fas fa-pen"></i>
+                            </a>
+                            <a href="/class/delete-class/<%= item._id %>" 
+                              class="btn btn-sm bg-danger-light">
+                              <i class="fas fa-trash"></i>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    <% });%>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <%- include('../includes/footer'); -%>
+  </body>
+</html>
